@@ -1,5 +1,4 @@
-const express = require('express');
-var marksheetService = require('./marksheetService');
+
 
 
 var createMarksheetControllerFn = async(req, res) => {
@@ -58,4 +57,3 @@ var deleteMarksheetControllerFn = async(req, res) =>{
         }
 }
 
-module.exports = {createMarksheetControllerFn, getOneMarksheetControllerFn, getAllMarksheetControllerFn, deleteMarksheetControllerFn, updateMarksheetControllerFn};
