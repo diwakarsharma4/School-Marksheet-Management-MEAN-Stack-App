@@ -1,4 +1,3 @@
-var userModel = require('./teacherModel');
 
 module.exports.createUserDbService = (userDetails) =>{
     return new Promise(function fun(resolve, reject){
