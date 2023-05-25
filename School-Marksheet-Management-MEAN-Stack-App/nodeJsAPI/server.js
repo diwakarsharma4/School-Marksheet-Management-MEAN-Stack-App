@@ -1,15 +1,11 @@
-const express = require('express');
 const mongoose = require('mongoose');
-mongoose.set('strictQuery', false);
 var studentroutes = require('./routes/studentRoutes');
 var teacherroutes = require('./routes/teacherRoutes');
 var markshettroutes = require('./routes/marksheetRoutes');
 const app = express();
 const cors = require('cors');
 
-app.use(cors({
-    origin: "http://localhost:4200"
-}));
+
 
 app.listen(4000, function check(error){
     if(error){
