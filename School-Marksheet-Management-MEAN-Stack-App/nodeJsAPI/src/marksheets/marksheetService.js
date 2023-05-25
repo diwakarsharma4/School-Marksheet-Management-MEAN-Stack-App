@@ -22,17 +22,6 @@ module.exports.createmarksheetDbService = (marksheetDetails) =>{
     });
 }
 
-module.exports.getOneMarksheetDbService = (id)=>{
-    return new Promise(function fun(resolve, reject){
-        marksheetModel.findById(id).
-        then(function(result){
-            resolve({status:true, msg:result});
-        }).
-        catch(function(error){
-            reject(false);
-        })
-    });
-}
 
 module.exports.getAllMarksheetDbService = ()=>{
     return new Promise(function fun(resolve, reject){
@@ -47,17 +36,7 @@ module.exports.getAllMarksheetDbService = ()=>{
 }
 
 
-module.exports.updateMarksheetDbService = (id, marksheetDetails) =>{
-    return new Promise(function fun(resolve, reject){
-        marksheetModel.findByIdAndUpdate(id, marksheetDetails).
-        then(function(result){
-            resolve(result);
-        }).
-        catch(function(error){
-        reject(false);
-    })
-});
-}
+
 
 module.exports.deleteMarksheetDbService = (id) =>{
     return new Promise(function fun(resolve, reject){
