@@ -1,5 +1,4 @@
-const express = require('express');
-var userService = require('./studentService');
+
 var createUserControllerFn = async(req, res) => {
     try {
         console.log(req.body);
@@ -31,4 +30,3 @@ var loginUserControllerFn = async(req, res) =>{
     }
 }
 
-module.exports = {createUserControllerFn, loginUserControllerFn};
